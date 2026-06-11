@@ -1,0 +1,1166 @@
+{
+  "entities": [
+    {
+      "ID": "P001",
+      "Name": "OncoCure",
+      "Type": "Product"
+    },
+    {
+      "ID": "P002",
+      "Name": "CardioSafe",
+      "Type": "Product"
+    },
+    {
+      "ID": "P003",
+      "Name": "GlucoCare",
+      "Type": "Product"
+    },
+    {
+      "ID": "P004",
+      "Name": "ImmunoPlus",
+      "Type": "Product"
+    },
+    {
+      "ID": "P005",
+      "Name": "NeuroAid",
+      "Type": "Product"
+    },
+    {
+      "ID": "P006",
+      "Name": "VacciShield",
+      "Type": "Product"
+    },
+    {
+      "ID": "P007",
+      "Name": "RenoLife",
+      "Type": "Product"
+    },
+    {
+      "ID": "P008",
+      "Name": "HepatoCare",
+      "Type": "Product"
+    },
+    {
+      "ID": "P009",
+      "Name": "RespiraX",
+      "Type": "Product"
+    },
+    {
+      "ID": "P010",
+      "Name": "DermoHeal",
+      "Type": "Product"
+    },
+    {
+      "ID": "P011",
+      "Name": "OrthoFlex",
+      "Type": "Product"
+    },
+    {
+      "ID": "P012",
+      "Name": "VisionPro",
+      "Type": "Product"
+    },
+    {
+      "ID": "C001",
+      "Name": "Apollo Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C002",
+      "Name": "Fortis Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C003",
+      "Name": "Max Healthcare",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C004",
+      "Name": "Aster Hospitals",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C005",
+      "Name": "Manipal Hospitals",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C006",
+      "Name": "MedPlus",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C007",
+      "Name": "Apollo Pharmacy",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C008",
+      "Name": "Care Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C009",
+      "Name": "Yashoda Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C010",
+      "Name": "Narayana Health",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C011",
+      "Name": "KIMS Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C012",
+      "Name": "Rainbow Hospital",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C013",
+      "Name": "Metro Pharmacy",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C014",
+      "Name": "HealthKart Medical",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C015",
+      "Name": "Sun Pharma Retail",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C016",
+      "Name": "Global Medics",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C017",
+      "Name": "WellCare Clinics",
+      "Type": "Customer"
+    },
+    {
+      "ID": "C018",
+      "Name": "Prime Healthcare",
+      "Type": "Customer"
+    },
+    {
+      "ID": "SR001",
+      "Name": "Rahul Sharma",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR002",
+      "Name": "Priya Patel",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR003",
+      "Name": "Arjun Singh",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR004",
+      "Name": "Neha Gupta",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR005",
+      "Name": "Ravi Kumar",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR006",
+      "Name": "Sneha Roy",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR007",
+      "Name": "Amit Verma",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR008",
+      "Name": "Karan Mehta",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR009",
+      "Name": "Anjali Rao",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "SR010",
+      "Name": "Vikas Nair",
+      "Type": "Sales Representative"
+    },
+    {
+      "ID": "D001",
+      "Name": "ABC Distributors",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D002",
+      "Name": "HealthLink Distribution",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D003",
+      "Name": "MedSupply Logistics",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D004",
+      "Name": "BioChain Distribution",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D005",
+      "Name": "LifeCare Logistics",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D006",
+      "Name": "Prime Distribution Services",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D007",
+      "Name": "HealthBridge Supply",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "D008",
+      "Name": "Global Pharma Distribution",
+      "Type": "Distributor"
+    },
+    {
+      "ID": "R001",
+      "Name": "North India",
+      "Type": "Region"
+    },
+    {
+      "ID": "R002",
+      "Name": "South India",
+      "Type": "Region"
+    },
+    {
+      "ID": "R003",
+      "Name": "East India",
+      "Type": "Region"
+    },
+    {
+      "ID": "R004",
+      "Name": "West India",
+      "Type": "Region"
+    },
+    {
+      "ID": "R005",
+      "Name": "Central India",
+      "Type": "Region"
+    },
+    {
+      "ID": "R006",
+      "Name": "North-East India",
+      "Type": "Region"
+    },
+    {
+      "ID": "M001",
+      "Name": "Oncology",
+      "Type": "Market Segment"
+    },
+    {
+      "ID": "M002",
+      "Name": "Cardiology",
+      "Type": "Market Segment"
+    },
+    {
+      "ID": "M003",
+      "Name": "Diabetes",
+      "Type": "Market Segment"
+    },
+    {
+      "ID": "M004",
+      "Name": "Vaccines",
+      "Type": "Market Segment"
+    },
+    {
+      "ID": "M005",
+      "Name": "Neurology",
+      "Type": "Market Segment"
+    },
+    {
+      "ID": "M006",
+      "Name": "Dermatology",
+      "Type": "Market Segment"
+    }
+  ],
+  "relationships": [
+    {
+      "Source": "P001",
+      "Relationship": "TARGETS",
+      "Target": "M001"
+    },
+    {
+      "Source": "P002",
+      "Relationship": "TARGETS",
+      "Target": "M002"
+    },
+    {
+      "Source": "P003",
+      "Relationship": "TARGETS",
+      "Target": "M003"
+    },
+    {
+      "Source": "P004",
+      "Relationship": "TARGETS",
+      "Target": "M004"
+    },
+    {
+      "Source": "P005",
+      "Relationship": "TARGETS",
+      "Target": "M005"
+    },
+    {
+      "Source": "P006",
+      "Relationship": "TARGETS",
+      "Target": "M004"
+    },
+    {
+      "Source": "P007",
+      "Relationship": "TARGETS",
+      "Target": "M003"
+    },
+    {
+      "Source": "P008",
+      "Relationship": "TARGETS",
+      "Target": "M001"
+    },
+    {
+      "Source": "P009",
+      "Relationship": "TARGETS",
+      "Target": "M005"
+    },
+    {
+      "Source": "P010",
+      "Relationship": "TARGETS",
+      "Target": "M006"
+    },
+    {
+      "Source": "P011",
+      "Relationship": "TARGETS",
+      "Target": "M002"
+    },
+    {
+      "Source": "P012",
+      "Relationship": "TARGETS",
+      "Target": "M006"
+    },
+    {
+      "Source": "P001",
+      "Relationship": "SOLD_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "P001",
+      "Relationship": "SOLD_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "P002",
+      "Relationship": "SOLD_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "P002",
+      "Relationship": "SOLD_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "P003",
+      "Relationship": "SOLD_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "P003",
+      "Relationship": "SOLD_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "P004",
+      "Relationship": "SOLD_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "P004",
+      "Relationship": "SOLD_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "P005",
+      "Relationship": "SOLD_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "P005",
+      "Relationship": "SOLD_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "P006",
+      "Relationship": "SOLD_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "P006",
+      "Relationship": "SOLD_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "P007",
+      "Relationship": "SOLD_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "P007",
+      "Relationship": "SOLD_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "P008",
+      "Relationship": "SOLD_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "P008",
+      "Relationship": "SOLD_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "P009",
+      "Relationship": "SOLD_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "P009",
+      "Relationship": "SOLD_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "P010",
+      "Relationship": "SOLD_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "P010",
+      "Relationship": "SOLD_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "P011",
+      "Relationship": "SOLD_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "P011",
+      "Relationship": "SOLD_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "P012",
+      "Relationship": "SOLD_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "P012",
+      "Relationship": "SOLD_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C001",
+      "Relationship": "PURCHASES",
+      "Target": "P001"
+    },
+    {
+      "Source": "C001",
+      "Relationship": "PURCHASES",
+      "Target": "P008"
+    },
+    {
+      "Source": "C002",
+      "Relationship": "PURCHASES",
+      "Target": "P002"
+    },
+    {
+      "Source": "C002",
+      "Relationship": "PURCHASES",
+      "Target": "P005"
+    },
+    {
+      "Source": "C003",
+      "Relationship": "PURCHASES",
+      "Target": "P003"
+    },
+    {
+      "Source": "C003",
+      "Relationship": "PURCHASES",
+      "Target": "P006"
+    },
+    {
+      "Source": "C004",
+      "Relationship": "PURCHASES",
+      "Target": "P004"
+    },
+    {
+      "Source": "C004",
+      "Relationship": "PURCHASES",
+      "Target": "P011"
+    },
+    {
+      "Source": "C005",
+      "Relationship": "PURCHASES",
+      "Target": "P001"
+    },
+    {
+      "Source": "C005",
+      "Relationship": "PURCHASES",
+      "Target": "P009"
+    },
+    {
+      "Source": "C006",
+      "Relationship": "PURCHASES",
+      "Target": "P010"
+    },
+    {
+      "Source": "C006",
+      "Relationship": "PURCHASES",
+      "Target": "P012"
+    },
+    {
+      "Source": "C007",
+      "Relationship": "PURCHASES",
+      "Target": "P007"
+    },
+    {
+      "Source": "C007",
+      "Relationship": "PURCHASES",
+      "Target": "P003"
+    },
+    {
+      "Source": "C008",
+      "Relationship": "PURCHASES",
+      "Target": "P002"
+    },
+    {
+      "Source": "C008",
+      "Relationship": "PURCHASES",
+      "Target": "P008"
+    },
+    {
+      "Source": "C009",
+      "Relationship": "PURCHASES",
+      "Target": "P005"
+    },
+    {
+      "Source": "C009",
+      "Relationship": "PURCHASES",
+      "Target": "P009"
+    },
+    {
+      "Source": "C010",
+      "Relationship": "PURCHASES",
+      "Target": "P001"
+    },
+    {
+      "Source": "C010",
+      "Relationship": "PURCHASES",
+      "Target": "P004"
+    },
+    {
+      "Source": "C011",
+      "Relationship": "PURCHASES",
+      "Target": "P006"
+    },
+    {
+      "Source": "C011",
+      "Relationship": "PURCHASES",
+      "Target": "P010"
+    },
+    {
+      "Source": "C012",
+      "Relationship": "PURCHASES",
+      "Target": "P011"
+    },
+    {
+      "Source": "C012",
+      "Relationship": "PURCHASES",
+      "Target": "P012"
+    },
+    {
+      "Source": "C013",
+      "Relationship": "PURCHASES",
+      "Target": "P003"
+    },
+    {
+      "Source": "C013",
+      "Relationship": "PURCHASES",
+      "Target": "P007"
+    },
+    {
+      "Source": "C014",
+      "Relationship": "PURCHASES",
+      "Target": "P002"
+    },
+    {
+      "Source": "C014",
+      "Relationship": "PURCHASES",
+      "Target": "P005"
+    },
+    {
+      "Source": "C015",
+      "Relationship": "PURCHASES",
+      "Target": "P008"
+    },
+    {
+      "Source": "C015",
+      "Relationship": "PURCHASES",
+      "Target": "P010"
+    },
+    {
+      "Source": "C016",
+      "Relationship": "PURCHASES",
+      "Target": "P001"
+    },
+    {
+      "Source": "C016",
+      "Relationship": "PURCHASES",
+      "Target": "P006"
+    },
+    {
+      "Source": "C017",
+      "Relationship": "PURCHASES",
+      "Target": "P009"
+    },
+    {
+      "Source": "C017",
+      "Relationship": "PURCHASES",
+      "Target": "P011"
+    },
+    {
+      "Source": "C018",
+      "Relationship": "PURCHASES",
+      "Target": "P004"
+    },
+    {
+      "Source": "C018",
+      "Relationship": "PURCHASES",
+      "Target": "P012"
+    },
+    {
+      "Source": "SR001",
+      "Relationship": "MANAGES",
+      "Target": "C001"
+    },
+    {
+      "Source": "SR001",
+      "Relationship": "MANAGES",
+      "Target": "C002"
+    },
+    {
+      "Source": "SR002",
+      "Relationship": "MANAGES",
+      "Target": "C003"
+    },
+    {
+      "Source": "SR002",
+      "Relationship": "MANAGES",
+      "Target": "C004"
+    },
+    {
+      "Source": "SR003",
+      "Relationship": "MANAGES",
+      "Target": "C005"
+    },
+    {
+      "Source": "SR003",
+      "Relationship": "MANAGES",
+      "Target": "C006"
+    },
+    {
+      "Source": "SR004",
+      "Relationship": "MANAGES",
+      "Target": "C007"
+    },
+    {
+      "Source": "SR004",
+      "Relationship": "MANAGES",
+      "Target": "C008"
+    },
+    {
+      "Source": "SR005",
+      "Relationship": "MANAGES",
+      "Target": "C009"
+    },
+    {
+      "Source": "SR005",
+      "Relationship": "MANAGES",
+      "Target": "C010"
+    },
+    {
+      "Source": "SR006",
+      "Relationship": "MANAGES",
+      "Target": "C011"
+    },
+    {
+      "Source": "SR006",
+      "Relationship": "MANAGES",
+      "Target": "C012"
+    },
+    {
+      "Source": "SR007",
+      "Relationship": "MANAGES",
+      "Target": "C013"
+    },
+    {
+      "Source": "SR007",
+      "Relationship": "MANAGES",
+      "Target": "C014"
+    },
+    {
+      "Source": "SR008",
+      "Relationship": "MANAGES",
+      "Target": "C015"
+    },
+    {
+      "Source": "SR008",
+      "Relationship": "MANAGES",
+      "Target": "C016"
+    },
+    {
+      "Source": "SR009",
+      "Relationship": "MANAGES",
+      "Target": "C017"
+    },
+    {
+      "Source": "SR010",
+      "Relationship": "MANAGES",
+      "Target": "C018"
+    },
+    {
+      "Source": "SR001",
+      "Relationship": "PROMOTES",
+      "Target": "P001"
+    },
+    {
+      "Source": "SR001",
+      "Relationship": "PROMOTES",
+      "Target": "P008"
+    },
+    {
+      "Source": "SR002",
+      "Relationship": "PROMOTES",
+      "Target": "P003"
+    },
+    {
+      "Source": "SR002",
+      "Relationship": "PROMOTES",
+      "Target": "P006"
+    },
+    {
+      "Source": "SR003",
+      "Relationship": "PROMOTES",
+      "Target": "P009"
+    },
+    {
+      "Source": "SR003",
+      "Relationship": "PROMOTES",
+      "Target": "P005"
+    },
+    {
+      "Source": "SR004",
+      "Relationship": "PROMOTES",
+      "Target": "P007"
+    },
+    {
+      "Source": "SR004",
+      "Relationship": "PROMOTES",
+      "Target": "P002"
+    },
+    {
+      "Source": "SR005",
+      "Relationship": "PROMOTES",
+      "Target": "P004"
+    },
+    {
+      "Source": "SR005",
+      "Relationship": "PROMOTES",
+      "Target": "P011"
+    },
+    {
+      "Source": "SR006",
+      "Relationship": "PROMOTES",
+      "Target": "P010"
+    },
+    {
+      "Source": "SR006",
+      "Relationship": "PROMOTES",
+      "Target": "P012"
+    },
+    {
+      "Source": "SR007",
+      "Relationship": "PROMOTES",
+      "Target": "P003"
+    },
+    {
+      "Source": "SR007",
+      "Relationship": "PROMOTES",
+      "Target": "P007"
+    },
+    {
+      "Source": "SR008",
+      "Relationship": "PROMOTES",
+      "Target": "P002"
+    },
+    {
+      "Source": "SR008",
+      "Relationship": "PROMOTES",
+      "Target": "P008"
+    },
+    {
+      "Source": "SR009",
+      "Relationship": "PROMOTES",
+      "Target": "P009"
+    },
+    {
+      "Source": "SR009",
+      "Relationship": "PROMOTES",
+      "Target": "P011"
+    },
+    {
+      "Source": "SR010",
+      "Relationship": "PROMOTES",
+      "Target": "P004"
+    },
+    {
+      "Source": "SR010",
+      "Relationship": "PROMOTES",
+      "Target": "P012"
+    },
+    {
+      "Source": "D001",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P001"
+    },
+    {
+      "Source": "D001",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P002"
+    },
+    {
+      "Source": "D001",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P003"
+    },
+    {
+      "Source": "D002",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P004"
+    },
+    {
+      "Source": "D002",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P005"
+    },
+    {
+      "Source": "D002",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P006"
+    },
+    {
+      "Source": "D003",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P007"
+    },
+    {
+      "Source": "D003",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P008"
+    },
+    {
+      "Source": "D004",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P009"
+    },
+    {
+      "Source": "D004",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P010"
+    },
+    {
+      "Source": "D005",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P011"
+    },
+    {
+      "Source": "D005",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P012"
+    },
+    {
+      "Source": "D006",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P001"
+    },
+    {
+      "Source": "D006",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P005"
+    },
+    {
+      "Source": "D007",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P003"
+    },
+    {
+      "Source": "D007",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P009"
+    },
+    {
+      "Source": "D008",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P002"
+    },
+    {
+      "Source": "D008",
+      "Relationship": "DISTRIBUTES",
+      "Target": "P010"
+    },
+    {
+      "Source": "D001",
+      "Relationship": "OPERATES_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "D001",
+      "Relationship": "OPERATES_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "D002",
+      "Relationship": "OPERATES_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "D002",
+      "Relationship": "OPERATES_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "D003",
+      "Relationship": "OPERATES_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "D003",
+      "Relationship": "OPERATES_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "D004",
+      "Relationship": "OPERATES_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "D004",
+      "Relationship": "OPERATES_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "D005",
+      "Relationship": "OPERATES_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "D005",
+      "Relationship": "OPERATES_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "D006",
+      "Relationship": "OPERATES_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "D006",
+      "Relationship": "OPERATES_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "D007",
+      "Relationship": "OPERATES_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "D007",
+      "Relationship": "OPERATES_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "D008",
+      "Relationship": "OPERATES_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "D008",
+      "Relationship": "OPERATES_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "C001",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C002",
+      "Relationship": "LOCATED_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "C003",
+      "Relationship": "LOCATED_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "C004",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C005",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C006",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C007",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C008",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C009",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C010",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C011",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C012",
+      "Relationship": "LOCATED_IN",
+      "Target": "R002"
+    },
+    {
+      "Source": "C013",
+      "Relationship": "LOCATED_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "C014",
+      "Relationship": "LOCATED_IN",
+      "Target": "R001"
+    },
+    {
+      "Source": "C015",
+      "Relationship": "LOCATED_IN",
+      "Target": "R004"
+    },
+    {
+      "Source": "C016",
+      "Relationship": "LOCATED_IN",
+      "Target": "R003"
+    },
+    {
+      "Source": "C017",
+      "Relationship": "LOCATED_IN",
+      "Target": "R005"
+    },
+    {
+      "Source": "C018",
+      "Relationship": "LOCATED_IN",
+      "Target": "R006"
+    },
+    {
+      "Source": "SR001",
+      "Relationship": "COVERS",
+      "Target": "R001"
+    },
+    {
+      "Source": "SR002",
+      "Relationship": "COVERS",
+      "Target": "R001"
+    },
+    {
+      "Source": "SR003",
+      "Relationship": "COVERS",
+      "Target": "R002"
+    },
+    {
+      "Source": "SR004",
+      "Relationship": "COVERS",
+      "Target": "R002"
+    },
+    {
+      "Source": "SR005",
+      "Relationship": "COVERS",
+      "Target": "R003"
+    },
+    {
+      "Source": "SR006",
+      "Relationship": "COVERS",
+      "Target": "R003"
+    },
+    {
+      "Source": "SR007",
+      "Relationship": "COVERS",
+      "Target": "R004"
+    },
+    {
+      "Source": "SR008",
+      "Relationship": "COVERS",
+      "Target": "R004"
+    },
+    {
+      "Source": "SR009",
+      "Relationship": "COVERS",
+      "Target": "R005"
+    },
+    {
+      "Source": "SR010",
+      "Relationship": "COVERS",
+      "Target": "R006"
+    }
+  ]
+}

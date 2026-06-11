@@ -1,0 +1,95 @@
+=================================================================
+  LIFE SCIENCES COMMERCIAL ANALYTICS
+  KNOWLEDGE GRAPH REPORT
+  Generated: 2026-06-11 12:09:44
+=================================================================
+
+1. ONTOLOGY SUMMARY
+-----------------------------------------------------------------
+Domain : Commercial Analytics
+Entity Types (6):
+   * Product                   12 entities
+   * Customer                  18 entities
+   * Sales Representative      10 entities
+   * Distributor               8 entities
+   * Region                    6 entities
+   * Market Segment            6 entities
+
+Relationship Types (9):
+   * COVERS               10 relationships
+   * DISTRIBUTES          18 relationships
+   * LOCATED_IN           18 relationships
+   * MANAGES              18 relationships
+   * OPERATES_IN          16 relationships
+   * PROMOTES             20 relationships
+   * PURCHASES            36 relationships
+   * SOLD_IN              24 relationships
+   * TARGETS              12 relationships
+
+2. ENTITY COUNTS
+-----------------------------------------------------------------
+   Total Entities      : 60
+   Total Relationships : 172
+   Graph Nodes         : 60
+   Graph Edges         : 172
+
+3. RELATIONSHIP COUNTS BY TYPE
+-----------------------------------------------------------------
+   PURCHASES            : 36
+   SOLD_IN              : 24
+   PROMOTES             : 20
+   MANAGES              : 18
+   DISTRIBUTES          : 18
+   LOCATED_IN           : 18
+   OPERATES_IN          : 16
+   TARGETS              : 12
+   COVERS               : 10
+
+4. KNOWLEDGE QUERIES EXECUTED
+-----------------------------------------------------------------
+   Products targeting Oncology : 2 found
+   Products sold in South India : 5 found
+   Customers in North India : 3 found
+   Products promoted by Rahul Sharma : 2 found
+   Regions covered by ABC Distributors : 2 found
+   Customers purchasing OncoCure : 4 found
+
+5. GRAPH INSIGHTS
+-----------------------------------------------------------------
+   Most Connected Entity                         : South India (Region) — 20 connections
+   Most Targeted Market Segment                  : Oncology — targeted by 2 products
+   Most Active Sales Rep                         : Rahul Sharma — manages 2 customers
+   Most Purchased Product                        : OncoCure — purchased by 4 customers
+   Region With Most Customers                    : South India — 10 customers
+   Distributor Covering Most Products            : ABC Distributors — distributes 3 products
+   Graph Density                                 : 0.0486
+
+6. CUSTOM DISCOVERY RULE -- HIGH-INFLUENCE PRODUCT
+-----------------------------------------------------------------
+   Score = (Customer Reach x 2) + (Regional Reach x 3) + (Segment Breadth x 4)
+   HIGH >= 12  |  MEDIUM 6-11  |  LOW < 6
+
+   OncoCure        | Score: 18 | HIGH  | Cust:4 Reg:2 Seg:1
+   CardioSafe      | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   GlucoCare       | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   ImmunoPlus      | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   NeuroAid        | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   VacciShield     | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   HepatoCare      | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   RespiraX        | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   DermoHeal       | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   OrthoFlex       | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   VisionPro       | Score: 16 | HIGH  | Cust:3 Reg:2 Seg:1
+   RenoLife        | Score: 14 | HIGH  | Cust:2 Reg:2 Seg:1
+
+7. RECOMMENDATIONS
+-----------------------------------------------------------------
+   1. Prioritise HIGH-influence products in marketing campaigns.
+   2. Expand distributor network in North-East India.
+   3. Increase Sales Rep coverage in Central India.
+   4. Leverage South India dense customer base for cross-sell.
+   5. Explore Dermatology segment for portfolio expansion.
+
+=================================================================
+  END OF REPORT
+=================================================================
