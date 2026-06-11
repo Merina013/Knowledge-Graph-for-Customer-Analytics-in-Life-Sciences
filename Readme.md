@@ -12,7 +12,7 @@ The application demonstrates how Knowledge Graphs can be used in Life Sciences C
 ## Live Application
 
 **Application URL:**
-[Knowledge Graph Explorer Live App](https://knowledge-graph-for-customer-analytics-in-life-sciences-11013.streamlit.app/?utm_source=chatgpt.com)
+[Knowledge Graph Explorer Live App] https://knowledge-graph-for-customer-analytics-in-life-sciences.streamlit.app/
 
 -------------------------------------------------------------------------------------------------------------------------
 
