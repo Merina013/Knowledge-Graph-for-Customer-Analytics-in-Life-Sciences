@@ -199,44 +199,63 @@ class KnowledgeGraphExplorer:
         self.relationships = []
 
         targets = [
-            ("P001","M001"),("P002","M002"),("P003","M003"),("P004","M004"),
-            ("P005","M005"),("P006","M004"),("P007","M003"),("P008","M001"),
-            ("P009","M005"),("P010","M006"),("P011","M002"),("P012","M006"),
+            ("P001","M001"),("P001","M005"),("P001","M002"),
+            ("P002","M002"),("P002","M003"),
+            ("P003","M003"),("P003","M001"),
+            ("P004","M004"),
+            ("P005","M005"),("P005","M001"),
+            ("P006","M004"),
+            ("P007","M003"),
+            ("P008","M001"),("P008","M006"),
+            ("P009","M005"),
+            ("P010","M006"),
+            ("P011","M002"),("P011","M004"),
+            ("P012","M006"),
         ]
         for s,t in targets:
             self.relationships.append(Relationship(s,t,"TARGETS"))
 
         sold_in = [
-            ("P001","R001"),("P001","R002"),("P002","R003"),("P002","R004"),
-            ("P003","R001"),("P003","R005"),("P004","R002"),("P004","R006"),
-            ("P005","R003"),("P005","R004"),("P006","R001"),("P006","R006"),
-            ("P007","R002"),("P007","R005"),("P008","R003"),("P008","R006"),
-            ("P009","R001"),("P009","R004"),("P010","R002"),("P010","R003"),
-            ("P011","R005"),("P011","R006"),("P012","R001"),("P012","R002"),
+            ("P001","R001"),("P001","R002"),("P001","R003"),("P001","R004"),
+            ("P002","R001"),("P002","R003"),("P002","R005"),
+            ("P003","R001"),("P003","R002"),("P003","R005"),
+            ("P004","R006"),
+            ("P005","R002"),("P005","R004"),
+            ("P006","R001"),("P006","R003"),
+            ("P007","R005"),
+            ("P008","R002"),("P008","R003"),("P008","R006"),
+            ("P009","R001"),("P009","R004"),
+            ("P011","R002"),("P011","R006"),
         ]
         for s,t in sold_in:
             self.relationships.append(Relationship(s,t,"SOLD_IN"))
 
         purchases = [
-            ("C001","P001"),("C001","P008"),("C002","P002"),("C002","P005"),
-            ("C003","P003"),("C003","P006"),("C004","P004"),("C004","P011"),
-            ("C005","P001"),("C005","P009"),("C006","P010"),("C006","P012"),
-            ("C007","P007"),("C007","P003"),("C008","P002"),("C008","P008"),
-            ("C009","P005"),("C009","P009"),("C010","P001"),("C010","P004"),
-            ("C011","P006"),("C011","P010"),("C012","P011"),("C012","P012"),
-            ("C013","P003"),("C013","P007"),("C014","P002"),("C014","P005"),
-            ("C015","P008"),("C015","P010"),("C016","P001"),("C016","P006"),
-            ("C017","P009"),("C017","P011"),("C018","P004"),("C018","P012"),
+            ("C001","P001"),("C005","P001"),("C010","P001"),("C015","P001"),("C016","P001"),
+            ("C002","P002"),("C008","P002"),("C014","P002"),("C017","P002"),
+            ("C003","P003"),("C007","P003"),("C013","P003"),
+            ("C004","P004"),
+            ("C009","P005"),("C014","P005"),("C002","P005"),
+            ("C003","P006"),("C011","P006"),
+            ("C007","P007"),
+            ("C001","P008"),("C008","P008"),("C015","P008"),
+            ("C005","P009"),("C017","P009"),
+            ("C004","P011"),("C012","P011"),
         ]
         for s,t in purchases:
             self.relationships.append(Relationship(s,t,"PURCHASES"))
 
         manages = [
-            ("SR001","C001"),("SR001","C002"),("SR002","C003"),("SR002","C004"),
-            ("SR003","C005"),("SR003","C006"),("SR004","C007"),("SR004","C008"),
-            ("SR005","C009"),("SR005","C010"),("SR006","C011"),("SR006","C012"),
-            ("SR007","C013"),("SR007","C014"),("SR008","C015"),("SR008","C016"),
-            ("SR009","C017"),("SR010","C018"),
+            ("SR001","C001"),("SR001","C002"),("SR001","C015"),
+            ("SR002","C003"),("SR002","C004"),
+            ("SR003","C005"),("SR003","C006"),
+            ("SR004","C007"),("SR004","C008"),
+            ("SR005","C009"),("SR005","C010"),
+            ("SR006","C011"),("SR006","C012"),
+            ("SR007","C013"),("SR007","C014"),
+            ("SR008","C016"),
+            ("SR009","C017"),
+            ("SR010","C018"),
         ]
         for s,t in manages:
             self.relationships.append(Relationship(s,t,"MANAGES"))
@@ -271,10 +290,10 @@ class KnowledgeGraphExplorer:
             self.relationships.append(Relationship(s,t,"OPERATES_IN"))
 
         located_in = [
-            ("C001","R002"),("C002","R001"),("C003","R001"),("C004","R002"),
-            ("C005","R002"),("C006","R002"),("C007","R002"),("C008","R002"),
-            ("C009","R002"),("C010","R002"),("C011","R002"),("C012","R002"),
-            ("C013","R003"),("C014","R001"),("C015","R004"),("C016","R003"),
+            ("C001","R002"),("C002","R001"),("C003","R001"),("C004","R006"),
+            ("C005","R002"),("C006","R004"),("C007","R005"),("C008","R003"),
+            ("C009","R002"),("C010","R002"),("C011","R003"),("C012","R002"),
+            ("C013","R003"),("C014","R001"),("C015","R004"),("C016","R002"),
             ("C017","R005"),("C018","R006"),
         ]
         for s,t in located_in:
@@ -1044,60 +1063,249 @@ def main():
         if selected_query.startswith("Q1"):
             segments = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Market Segment"])
             seg = st.selectbox("Market Segment", segments)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q1_btn"):
                 results = explorer.query_products_by_segment(seg)
-                st.success(f"**{len(results)}** product(s) targeting **{seg}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** product(s) targeting **{seg}**")
+                    # Enrich with distributor and region info
+                    enriched = []
+                    for r in results:
+                        pid = r["Product ID"]
+                        regions_list = [explorer.entities[rel.target].entity_name
+                                        for rel in explorer.relationships
+                                        if rel.relationship_type == "SOLD_IN" and rel.source == pid]
+                        dists_list   = [explorer.entities[rel.source].entity_name
+                                        for rel in explorer.relationships
+                                        if rel.relationship_type == "DISTRIBUTES" and rel.target == pid]
+                        custs_list   = [explorer.entities[rel.source].entity_name
+                                        for rel in explorer.relationships
+                                        if rel.relationship_type == "PURCHASES" and rel.target == pid]
+                        enriched.append({
+                            "Product ID":    r["Product ID"],
+                            "Product":       r["Product"],
+                            "Segment":       r["Segment"],
+                            "Regions Sold":  ", ".join(regions_list) if regions_list else "—",
+                            "Distributors":  ", ".join(dists_list)   if dists_list   else "—",
+                            "Customers":     ", ".join(custs_list)   if custs_list   else "—",
+                            "Customer Count": len(custs_list),
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
         elif selected_query.startswith("Q2"):
             regions = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Region"])
             reg = st.selectbox("Region", regions)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q2_btn"):
                 results = explorer.query_products_by_region(reg)
-                st.success(f"**{len(results)}** product(s) sold in **{reg}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** product(s) sold in **{reg}**")
+                    enriched = []
+                    for r in results:
+                        pid = r["Product ID"]
+                        segs_list  = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "TARGETS" and rel.source == pid]
+                        custs_list = [explorer.entities[rel.source].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "PURCHASES" and rel.target == pid]
+                        dists_list = [explorer.entities[rel.source].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "DISTRIBUTES" and rel.target == pid]
+                        enriched.append({
+                            "Product ID":      r["Product ID"],
+                            "Product":         r["Product"],
+                            "Region":          r["Region"],
+                            "Market Segments": ", ".join(segs_list)  if segs_list  else "—",
+                            "Distributors":    ", ".join(dists_list) if dists_list else "—",
+                            "Customers":       ", ".join(custs_list) if custs_list else "—",
+                            "Customer Count":  len(custs_list),
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
         elif selected_query.startswith("Q3"):
             regions = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Region"])
             reg = st.selectbox("Region", regions)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q3_btn"):
                 results = explorer.query_customers_by_region(reg)
-                st.success(f"**{len(results)}** customer(s) in **{reg}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** customer(s) in **{reg}**")
+                    enriched = []
+                    for r in results:
+                        cid = r["Customer ID"]
+                        prods_list = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "PURCHASES" and rel.source == cid]
+                        sr_list    = [explorer.entities[rel.source].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "MANAGES" and rel.target == cid]
+                        enriched.append({
+                            "Customer ID":       r["Customer ID"],
+                            "Customer":          r["Customer"],
+                            "Region":            r["Region"],
+                            "Products Purchased": ", ".join(prods_list) if prods_list else "—",
+                            "Purchase Count":    len(prods_list),
+                            "Sales Rep":         ", ".join(sr_list)    if sr_list    else "—",
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
         elif selected_query.startswith("Q4"):
             reps = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Sales Representative"])
             rep = st.selectbox("Sales Representative", reps)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q4_btn"):
                 results = explorer.query_sales_rep_products(rep)
-                st.success(f"**{len(results)}** product(s) promoted by **{rep}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** product(s) promoted by **{rep}**")
+                    enriched = []
+                    for r in results:
+                        pid = r["Product ID"]
+                        rid = r["Rep ID"]
+                        segs_list  = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "TARGETS" and rel.source == pid]
+                        regs_list  = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "SOLD_IN" and rel.source == pid]
+                        custs_mgd  = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "MANAGES" and rel.source == rid]
+                        region_cov = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "COVERS" and rel.source == rid]
+                        enriched.append({
+                            "Rep ID":            r["Rep ID"],
+                            "Sales Rep":         r["Sales Rep"],
+                            "Product ID":        r["Product ID"],
+                            "Product":           r["Product"],
+                            "Market Segments":   ", ".join(segs_list)  if segs_list  else "—",
+                            "Regions Sold":      ", ".join(regs_list)  if regs_list  else "—",
+                            "Region Covered":    ", ".join(region_cov) if region_cov else "—",
+                            "Customers Managed": ", ".join(custs_mgd)  if custs_mgd  else "—",
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
         elif selected_query.startswith("Q5"):
             dists = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Distributor"])
             dist = st.selectbox("Distributor", dists)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q5_btn"):
                 results = explorer.query_distributor_regions(dist)
-                st.success(f"**{len(results)}** region(s) covered by **{dist}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** region(s) covered by **{dist}**")
+                    enriched = []
+                    for r in results:
+                        did = r["Distributor ID"]
+                        rid = r["Region ID"]
+                        prods_list = [explorer.entities[rel.target].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "DISTRIBUTES" and rel.source == did]
+                        custs_in   = [explorer.entities[rel.source].entity_name
+                                      for rel in explorer.relationships
+                                      if rel.relationship_type == "LOCATED_IN" and rel.target == rid]
+                        enriched.append({
+                            "Distributor ID":    r["Distributor ID"],
+                            "Distributor":       r["Distributor"],
+                            "Region ID":         r["Region ID"],
+                            "Region":            r["Region"],
+                            "Products Handled":  ", ".join(prods_list) if prods_list else "—",
+                            "Product Count":     len(prods_list),
+                            "Customers in Region": ", ".join(custs_in) if custs_in else "—",
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
         elif selected_query.startswith("Q6"):
             prods = sorted([e.entity_name for e in explorer.entities.values() if e.entity_type == "Product"])
             prod = st.selectbox("Product", prods)
-            if st.button("Run Query"):
+            if st.button("Run Query", key="q6_btn"):
                 results = explorer.query_customers_by_product(prod)
-                st.success(f"**{len(results)}** customer(s) purchasing **{prod}**") if results else st.warning("No results.")
-                if results: st.dataframe(results, use_container_width=True)
+                if results:
+                    st.success(f"**{len(results)}** customer(s) purchasing **{prod}**")
+                    enriched = []
+                    for r in results:
+                        cid = r["Customer ID"]
+                        pid_list = [rel.target for rel in explorer.relationships
+                                    if rel.relationship_type == "PURCHASES" and rel.source == cid]
+                        sr_list  = [explorer.entities[rel.source].entity_name
+                                    for rel in explorer.relationships
+                                    if rel.relationship_type == "MANAGES" and rel.target == cid]
+                        reg_list = [explorer.entities[rel.target].entity_name
+                                    for rel in explorer.relationships
+                                    if rel.relationship_type == "LOCATED_IN" and rel.source == cid]
+                        all_prods = [explorer.entities[p].entity_name for p in pid_list if p in explorer.entities]
+                        enriched.append({
+                            "Customer ID":        r["Customer ID"],
+                            "Customer":           r["Customer"],
+                            "Product Purchased":  r["Product"],
+                            "All Products Bought": ", ".join(all_prods) if all_prods else "—",
+                            "Region":             ", ".join(reg_list) if reg_list else "—",
+                            "Sales Rep":          ", ".join(sr_list)  if sr_list  else "—",
+                        })
+                    st.dataframe(enriched, use_container_width=True)
+                else:
+                    st.warning("No results found.")
 
     # ================================================================
     # GRAPH INSIGHTS
     # ================================================================
     elif current_page == PAGE_INSIGHTS:
         st.title("💡 Graph Insights")
+        st.markdown("Automatically derived insights from the knowledge graph structure and relationships.")
+        st.markdown("---")
         insights = explorer.generate_insights()
-        for idx, (key, val) in enumerate(insights.items(), 1):
-            st.markdown(f"**Insight {idx}: {key}**")
-            st.info(val)
+
+        INSIGHT_META = {
+            "Most Connected Entity":          ("🔗", "Most Connected Entity",         "The node with the highest number of direct connections (in + out) in the graph."),
+            "Most Targeted Market Segment":   ("🎯", "Most Targeted Market Segment",   "The market segment that the greatest number of products are aimed at."),
+            "Most Active Sales Rep":          ("🏆", "Most Active Sales Rep",           "The sales representative managing the highest number of customer accounts."),
+            "Most Purchased Product":         ("🛒", "Most Purchased Product",          "The product ordered by the most distinct customers."),
+            "Region With Most Customers":     ("📍", "Region With Most Customers",      "The geographic region that hosts the largest number of customer entities."),
+            "Distributor Covering Most Products": ("🚚", "Distributor Covering Most Products", "The distributor handling the widest product portfolio."),
+            "Graph Density":                  ("📊", "Graph Density",                   "Ratio of actual edges to the maximum possible edges — higher means more interconnected."),
+        }
+
+        items = list(insights.items())
+        # Render in pairs side by side, last one full-width if odd count
+        for i in range(0, len(items), 2):
+            cols = st.columns(2) if i + 1 < len(items) else [st.columns(1)[0], None]
+            for col_idx, (key, val) in enumerate(items[i:i+2]):
+                if cols[col_idx] is None:
+                    break
+                meta = INSIGHT_META.get(key, ("💡", key, ""))
+                icon, title, desc = meta
+                with cols[col_idx]:
+                    st.markdown(
+                        f"""
+                        <div style="border:1px solid #2d4a6e; border-radius:10px; padding:18px 20px;
+                                    background:linear-gradient(135deg,#0d1b2e 0%,#112240 100%);
+                                    margin-bottom:12px;">
+                            <div style="font-size:2rem; margin-bottom:4px;">{icon}</div>
+                            <div style="color:#a8c4e0; font-size:0.78rem; font-weight:600;
+                                        text-transform:uppercase; letter-spacing:0.05em; margin-bottom:4px;">
+                                {title}
+                            </div>
+                            <div style="color:#e8f4fd; font-size:1.05rem; font-weight:700; margin-bottom:8px;">
+                                {val}
+                            </div>
+                            <div style="color:#6b8fa8; font-size:0.75rem; line-height:1.4;">
+                                {desc}
+                            </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+        st.markdown("---")
+        st.markdown("##### Raw Insights Table")
+        st.dataframe(
+            [{"#": idx, "Insight": k, "Value": v} for idx, (k, v) in enumerate(insights.items(), 1)],
+            use_container_width=True,
+        )
 
     # ================================================================
     # DISCOVERY RULE
@@ -1136,6 +1344,34 @@ Influence Score = (Customer Reach x 2) + (Regional Reach x 3) + (Segment Breadth
         c1.metric("🟢 HIGH",   sum(1 for r in rule_results if r["Classification"] == "HIGH"))
         c2.metric("🟡 MEDIUM", sum(1 for r in rule_results if r["Classification"] == "MEDIUM"))
         c3.metric("🔴 LOW",    sum(1 for r in rule_results if r["Classification"] == "LOW"))
+
+        st.markdown("---")
+        st.markdown("**Score Distribution Chart**")
+        try:
+            prod_names_dr = [r["Product"]        for r in rule_results]
+            scores_dr     = [r["Influence Score"] for r in rule_results]
+            cls_dr        = [r["Classification"]  for r in rule_results]
+            bar_colors_dr = ["#4CAF50" if c == "HIGH" else "#FFC107" if c == "MEDIUM" else "#F44336"
+                             for c in cls_dr]
+            fig_dr, ax_dr = plt.subplots(figsize=(13, 5))
+            bars_dr = ax_dr.bar(prod_names_dr, scores_dr, color=bar_colors_dr, edgecolor="white")
+            ax_dr.bar_label(bars_dr, padding=3, fontsize=9)
+            ax_dr.axhline(y=12, color="#4CAF50", linestyle="--", linewidth=1.2, label="HIGH threshold (12)")
+            ax_dr.axhline(y=6,  color="#FFC107", linestyle="--", linewidth=1.2, label="MEDIUM threshold (6)")
+            ax_dr.set_ylabel("Influence Score")
+            ax_dr.set_title("Product Influence Scores — High-Influence Rule", fontweight="bold")
+            ax_dr.tick_params(axis="x", rotation=20)
+            ax_dr.legend(fontsize=8)
+            leg_patches = [
+                mpatches.Patch(color="#4CAF50", label="HIGH (≥12)"),
+                mpatches.Patch(color="#FFC107", label="MEDIUM (6-11)"),
+                mpatches.Patch(color="#F44336", label="LOW (<6)"),
+            ]
+            ax_dr.legend(handles=leg_patches, fontsize=8, loc="upper right")
+            fig_dr.tight_layout()
+            _render_fig(fig_dr)
+        except Exception as exc:
+            st.error(f"Discovery rule chart error: {exc}")
 
     # ================================================================
     # GRAPH VISUALIZATION
